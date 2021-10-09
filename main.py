@@ -3,12 +3,15 @@ import pandas as pd
 
 df = pd.read_csv('users.csv')
 
+
+
 def click():
     for j in range(0,len(df)):
         if(entryuser.get() == df.USERNAME[j]):
             if(entrypwd.get() == df.PASSWORD[j]):
                 secondwindow=tk.Tk()
                 secondwindow.minsize(800,600)
+                
         
 
 
@@ -47,6 +50,8 @@ entrypwd.grid(row=3,column=2, columnspan = 1, pady=5)
 button1 = tk.Button(window, text = "Submit", bg='#FFFFFF', command=click)
 button1.grid(row=4,column=2, pady=30)
 button1.config(font=('Roboto' , 20))
+
+
 
 
 window.mainloop()
