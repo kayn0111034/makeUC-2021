@@ -1,1 +1,0 @@
-MakeUC Hackathon
