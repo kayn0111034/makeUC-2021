@@ -50,14 +50,15 @@ def click():
                 comments.grid(row=4,column=1, columnspan = 1, pady=5)
 
                 #save button
-                savebtn = tk.Button(window, text = "Save", bg='#FFFFFF', command=secondcheck)
+                savebtn = tk.Button(window, text = " Save ", bg='#FFFFFF', command=secondcheck)
                 savebtn.grid(row=5,column=1, pady=30)
                 savebtn.config(font=('Roboto' , 20))
 
                 
-
-
-                
+def clickadd():
+    df.loc[len(lf)] = [entryuser.get(), entrypwd.get()]
+    df.to_csv("users.csv", index=False)
+    #break         
 
         
 window=tk.Tk()
@@ -97,7 +98,10 @@ button1 = tk.Button(window, text = "Submit", bg='#FFFFFF', command=click)
 button1.grid(row=4,column=1, pady=30)
 button1.config(font=('Roboto' , 16))
 
-
+#create new user
+createnewuser = tk.Button(window, text = "Add User", bg='#FFFFFF', command=clickadd)
+createnewuser.grid(row=5,column=1, pady=30)
+createnewuser.config(font=('Roboto' , 16))
 
 window.mainloop()
 
