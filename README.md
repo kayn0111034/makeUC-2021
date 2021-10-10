@@ -1,6 +1,6 @@
 # makeUC-2021
-Our project is EduHelp
-The project is a organizational website with a virtual assistant.
+Our project is called EduHelp.
+EduHelp is a Python app that allows teachers to take attendance and write comments about how students are doing in class.
 
 ## Tools & Languages
 - Python
