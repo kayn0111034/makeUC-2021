@@ -9,7 +9,7 @@ The project is a organizational website with a virtual assistant.
 - Excel
 
 ## Members
-- Al (https://github.com/alsworth)
+- Al A (https://github.com/alsworth)
 - Wesley C (https://github.com/kayn0111034)
 - Saaras P (https://github.com/randochat)
 - Karthikeya M (https://github.com/Karthikeya-Meesala)
